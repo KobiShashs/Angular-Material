@@ -7,10 +7,12 @@ import { from } from 'rxjs';
 import { MaterialModule } from './material/material.module';
 import { ButtonsComponent } from './components/buttons/buttons.component';
 import { MatIconModule } from '@angular/material/icon';
+import { TypographyComponent } from './components/typography/typography.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    TypographyComponent
   ],
   imports: [
     BrowserModule,
