@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'landing';
-  showButtons: boolean = false;
-  showTypography: boolean = true;
+  showButtons = false;
+  showTypography = false;
+  showButtonToggle = true;
 
 
 }
