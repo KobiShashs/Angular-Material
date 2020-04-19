@@ -14,6 +14,8 @@ import { BadgesComponent } from './components/badges/badges.component';
 import { ProgressspinnerComponent } from './components/progressspinner/progressspinner.component';
 import { FormsModule } from '@angular/forms';
 import { ProgressbarComponent } from './components/progressbar/progressbar.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import { ProgressbarComponent } from './components/progressbar/progressbar.compo
     IconsComponent,
     BadgesComponent,
     ProgressspinnerComponent,
-    ProgressbarComponent
+    ProgressbarComponent,
+    ToolbarComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

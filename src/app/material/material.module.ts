@@ -8,8 +8,10 @@ import {MatSliderModule} from '@angular/material/slider';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
-const MaterialComponents = [
+const material = [
   MatButtonModule,
   MatButtonToggleModule,
   MatIconModule,
@@ -18,16 +20,13 @@ const MaterialComponents = [
   MatSliderModule,
   MatRadioModule,
   MatCardModule,
-  MatProgressBarModule
+  MatProgressBarModule,
+  MatToolbarModule,
+  MatSidenavModule
 ];
 
 @NgModule({
-
-  imports: [
-    MaterialComponents
-  ],
-  exports: [
-    MaterialComponents
-  ]
+  imports: [material],
+  exports: [material]
 })
 export class MaterialModule { }

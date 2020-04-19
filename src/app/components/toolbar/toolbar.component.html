@@ -1,0 +1,54 @@
+<h3>Single row</h3>
+<div>
+    <mat-toolbar>My App</mat-toolbar>
+</div>
+
+<div>
+    <mat-toolbar><span>Code</span></mat-toolbar>
+</div>
+
+<div>
+    <mat-toolbar color="primary"><span>Code</span></mat-toolbar>
+</div>
+
+<h3>Multiple rows</h3>
+
+<mat-toolbar>  
+    <mat-toolbar-row>
+      <span>First Row</span>
+    </mat-toolbar-row>
+  
+    <mat-toolbar-row>
+      <span>Second Row</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <h3>Positioning toolbar content</h3>
+  <mat-toolbar color="primary">
+    <span>Application Title</span>
+  
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+  
+    <span>Right Aligned Text</span>
+  </mat-toolbar>
+
+  <h3>Naive toolbar</h3>
+  <mat-toolbar color="primary">
+      <div>Code</div>
+      <div>
+          <span>Home</span>
+          <span>About</span>
+          <span>Services</span>
+      </div>
+  </mat-toolbar>
+
+  <h3>Make it navbar in order to be great again</h3>
+  <mat-toolbar color="primary" class="navbar">
+      <div>Code</div>
+      <div>
+          <span>Home</span>
+          <span>About</span>
+          <span>Services</span>
+      </div>
+  </mat-toolbar>

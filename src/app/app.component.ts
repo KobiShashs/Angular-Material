@@ -7,13 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'landing';
+
+  showElements = false;
+  
   showButtons = false;
   showTypography = false;
   showButtonToggle = false;
   showIcons = false;
   showBadges = false;
   showProgressSpinner = false;
-  showProgressBar = true;
+  showProgressBar = false;
+  showToolbar = false;
+  showSidenav = true;
 
 }
 
