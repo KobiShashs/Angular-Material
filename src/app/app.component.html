@@ -1,14 +1,34 @@
 <div>
-   <button  (click)="showButtons = !showButtons"> Material Buttons</button> 
+   <button mat-raised-button color="primary" (click)="showButtons = !showButtons"> Material Buttons</button> 
    <app-buttons *ngIf="showButtons"></app-buttons>
 </div>
 <div>
-   <button  (click)="showTypography = !showTypography"> Material Typography</button> 
+   <button mat-raised-button color="primary" (click)="showTypography = !showTypography"> Material Typography</button> 
    <app-typography *ngIf="showTypography"></app-typography>
 </div>
 
 <div>
-   <button  (click)="showButtonToggle = !showButtonToggle"> Material Button Toggle</button> 
+   <button mat-raised-button color="primary" (click)="showButtonToggle = !showButtonToggle"> Material Button Toggle</button> 
    <app-button-toggle *ngIf="showButtonToggle"></app-button-toggle>
 </div>
+<div>
+   <button mat-raised-button color="primary" (click)="showIcons = !showIcons"> Material Icons</button> 
+   <app-icons *ngIf="showIcons"></app-icons>
+</div>
+
+<div>
+   <button mat-raised-button color="primary" (click)="showBadges = !showBadges"> Material Badges</button> 
+   <app-badges *ngIf="showBadges"></app-badges>
+</div>
+
+<div>
+   <button mat-raised-button color="primary" (click)="showProgressSpinner = !showProgressSpinner"> Material Progrees Spinner</button> 
+   <app-progressspinner *ngIf="showProgressSpinner"></app-progressspinner>
+</div>
+
+<div>
+   <button mat-raised-button color="primary" (click)="showProgressBar = !showProgressBar"> Material Progrees Bar</button> 
+   <app-progressbar *ngIf="showProgressBar"></app-progressbar>
+</div>
+
 

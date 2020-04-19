@@ -9,8 +9,11 @@ export class AppComponent {
   title = 'landing';
   showButtons = false;
   showTypography = false;
-  showButtonToggle = true;
-
+  showButtonToggle = false;
+  showIcons = false;
+  showBadges = false;
+  showProgressSpinner = false;
+  showProgressBar = true;
 
 }
 

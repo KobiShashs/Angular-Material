@@ -9,19 +9,29 @@ import { ButtonsComponent } from './components/buttons/buttons.component';
 import { MatIconModule } from '@angular/material/icon';
 import { TypographyComponent } from './components/typography/typography.component';
 import { ButtonToggleComponent } from './components/button-toggle/button-toggle.component';
+import { IconsComponent } from './components/icons/icons.component';
+import { BadgesComponent } from './components/badges/badges.component';
+import { ProgressspinnerComponent } from './components/progressspinner/progressspinner.component';
+import { FormsModule } from '@angular/forms';
+import { ProgressbarComponent } from './components/progressbar/progressbar.component';
 @NgModule({
   declarations: [
     AppComponent,
     ButtonsComponent,
     TypographyComponent,
-    ButtonToggleComponent
+    ButtonToggleComponent,
+    IconsComponent,
+    BadgesComponent,
+    ProgressspinnerComponent,
+    ProgressbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MatIconModule],
+    MatIconModule,
+    FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

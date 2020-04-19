@@ -1,22 +1,26 @@
+<h3>Dummy Toggle</h3>
 <div>
     <mat-button-toggle>Toggle</mat-button-toggle>
 </div>
 
+<h3>Toggle with state</h3>
 <div>
     <mat-button-toggle #toggleBtn1>Toggle</mat-button-toggle>
     {{toggleBtn1.checked}}
 </div>
 
+<h3>Toggle with disableRipple</h3>
 <div>
     <mat-button-toggle #toggleBtn2 checked disableRipple>Toggle</mat-button-toggle>
     {{toggleBtn2.checked}}
 </div>
-
+<h3>Toggle with disableRipple disabled</h3>
 <div>
     <mat-button-toggle #toggleBtn3 checked disableRipple disabled>Toggle</mat-button-toggle>
     {{toggleBtn3.checked}}
 </div>
 
+<h3>Toggle with Single Choise</h3>
 <div>
     <mat-button-toggle-group #toggleGroup1="matButtonToggleGroup">
         <mat-button-toggle value="angular">Angular</mat-button-toggle>
@@ -25,7 +29,7 @@
     </mat-button-toggle-group>
     {{toggleGroup1.value}}
 </div>
-
+<h3>Toggle with Multuple Choise</h3>
 <div>
     <mat-button-toggle-group #toggleGroup2="matButtonToggleGroup" multiple>
         <mat-button-toggle value="angular">Angular</mat-button-toggle>

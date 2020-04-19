@@ -1,0 +1,104 @@
+<h3>Simple Badge</h3>
+<div>
+    <p>
+        <span matBadge="4">Text with a badge</span>
+    </p>
+</div>
+<h3>Positioning Badges</h3>
+<div>
+
+    <p>
+        <span matBadge="4" matBadgePosition="below before">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgePosition="below after">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgePosition="above before">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgePosition="above after">Text with a badge</span>
+    </p>
+</div>
+<h3>Badge sizes</h3>
+<div>
+    <p>
+        <span matBadge="4" matBadgeSize="small">Text with a badge</span>
+    </p>
+</div>
+<div>
+    <p>
+        <span matBadge="4" matBadgeSize="medium">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgeSize="large">Text with a badge</span>
+    </p>
+</div>
+<h3>Badge colors</h3>
+<div>
+    <p>
+        <span matBadge="4" matBadgeColor="primary">Text with a badge</span>
+    </p>
+</div>
+<div>
+    <p>
+        <span matBadge="4" matBadgeColor="accent">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgeColor="warn">Text with a badge</span>
+    </p>
+</div>
+<h3>Material Offical examples</h3>
+<div>
+    <p>
+        <span matBadge="4" matBadgePosition="above after">Text with a badge</span>
+    </p>
+</div>
+
+<div>
+    <p>
+        <span matBadge="4" matBadgeOverlap="false">Text with a badge</span>
+    </p>
+</div>
+<div>
+    <p>
+        Button with a badge on the left
+        <button mat-raised-button color="primary" matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+            Action
+        </button>
+    </p>
+</div>
+
+<div>
+    <p>
+        Icon with a badge
+        <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+        <!-- Include text description of the icon's meaning for screen-readers -->
+        <span class="cdk-visually-hidden">
+            Example with a home icon with overlaid badge showing the number 15
+        </span>
+    </p>
+</div>
+
+<h3>Propertey binding</h3>
+
+<div>
+    <p>
+        <span [matBadge]="notifications" [matBadgeHidden]="notifications === 0">Text with a badge</span>
+    </p>
+</div>
