@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'landing';
 
   showElements = false;
-  
+
   showButtons = false;
   showTypography = false;
   showButtonToggle = false;
@@ -18,7 +18,11 @@ export class AppComponent {
   showProgressSpinner = false;
   showProgressBar = false;
   showToolbar = false;
-  showSidenav = true;
+  showSidenav = false;
+  showMenu = false;
+  showList = false;
+  showGridList = false;
+  showExpansionPanel = true;
 
 }
 

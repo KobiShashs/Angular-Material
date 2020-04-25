@@ -37,8 +37,27 @@
 </div>
 
 <div>
-   <button *ngIf="true" mat-raised-button color="primary" (click)="showSidenav = !showSidenav"> Material Sidenav</button> 
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showSidenav = !showSidenav"> Material Sidenav</button> 
    <app-sidenav *ngIf="showSidenav"></app-sidenav>
+</div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showMenu = !showMenu"> Material Menu</button> 
+   <app-menu *ngIf="showMenu"></app-menu>
+</div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showList = !showList"> Material List</button> 
+   <app-list *ngIf="showList"></app-list>
+</div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showGridList = !showGridList"> Material Grid List</button> 
+   <app-gridlist *ngIf="showGridList"></app-gridlist>
+</div>
+
+<div>
+   <button *ngIf="true" mat-raised-button color="primary" (click)="showExpansionPanel = !showExpansionPanel"> Material Expansion Panel</button> 
+   <app-expansionpanel *ngIf="showExpansionPanel"></app-expansionpanel>
 </div>
 
 
