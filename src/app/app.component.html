@@ -56,8 +56,41 @@
 </div>
 
 <div>
-   <button *ngIf="true" mat-raised-button color="primary" (click)="showExpansionPanel = !showExpansionPanel"> Material Expansion Panel</button> 
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showExpansionPanel = !showExpansionPanel"> Material Expansion Panel</button> 
    <app-expansionpanel *ngIf="showExpansionPanel"></app-expansionpanel>
 </div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showCards = !showCards"> Material Cards</button> 
+   <app-cards *ngIf="showCards"></app-cards>
+</div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showTabs = !showTabs"> Material Tabs</button> 
+   <app-tabs *ngIf="showTabs"></app-tabs>
+</div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showStepper = !showStepper"> Material Stepper</button> 
+   <app-stepper *ngIf="showStepper"></app-stepper>
+</div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showInput = !showInput"> Material Input</button> 
+   <app-input *ngIf="showInput"></app-input>
+</div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showSelect = !showSelect"> Material Select</button> 
+   <app-select *ngIf="showSelect"></app-select>
+</div>
+<div>
+   <button *ngIf="showAutocomplete" mat-raised-button color="primary" (click)="showAutocomplete = !showAutocomplete"> Material Autocomplete</button> 
+   <app-autocomplete *ngIf="showAutocomplete"></app-autocomplete>
+</div>
+<div>
+   <button *ngIf="true" mat-raised-button color="primary" (click)="showAutocompleteFilter = !showAutocompleteFilter"> Material Autocomplete Filter</button> 
+   <app-autocompletefilter *ngIf="showAutocompleteFilter"></app-autocompletefilter>
+</div>
+
+
 
 

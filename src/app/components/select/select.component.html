@@ -1,0 +1,48 @@
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+    <mat-select [(value)]="selecteValue">
+        <mat-option value="angular">Angular</mat-option>
+        <mat-option value="react">React</mat-option>
+        <mat-option value="vue">Vue</mat-option>
+    </mat-select>
+</mat-form-field>
+{{selecteValue}}
+<br>
+<mat-form-field>
+    <mat-label>Topic</mat-label>
+    <mat-select [(value)]="selecteValue2" multiple>
+        <mat-option>None</mat-option>
+        <mat-optgroup label="Web">
+            <mat-option value="angular">Angular</mat-option>
+            <mat-option value="react">React</mat-option>
+            <mat-option value="vue">Vue</mat-option>
+        </mat-optgroup>
+        <mat-optgroup label="Mobile">
+            <mat-option value="ionic">Ionic</mat-option>
+            <mat-option value="reactnative">React Native</mat-option>
+        </mat-optgroup>
+       
+    </mat-select>
+</mat-form-field>
+{{selecteValue2}}
+
+<h4>Basic mat-select</h4>
+<mat-form-field>
+  <mat-label>Favorite food</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let food of foods" [value]="food.value">
+      {{food.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<h4>Basic native select</h4>
+<mat-form-field>
+  <mat-label>Cars</mat-label>
+  <select matNativeControl required>
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+</mat-form-field>

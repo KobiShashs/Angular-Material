@@ -16,6 +16,12 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 const material = [
   MatButtonModule,
   MatButtonToggleModule,
@@ -33,7 +39,13 @@ const material = [
   MatDividerModule,
   MatGridListModule,
   MatExpansionModule,
-  MatFormFieldModule
+  MatFormFieldModule,
+  MatTabsModule,
+  MatCheckboxModule,
+  MatStepperModule,
+  MatInputModule,
+  MatSelectModule,
+  MatAutocompleteModule
 ];
 
 @NgModule({

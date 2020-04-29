@@ -20,6 +20,15 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ListComponent } from './components/list/list.component';
 import { GridlistComponent } from './components/gridlist/gridlist.component';
 import { ExpansionpanelComponent } from './components/expansionpanel/expansionpanel.component';
+import { CardsComponent } from './components/cards/cards.component';
+import { TabsComponent } from './components/tabs/tabs.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { StepperComponent } from './components/stepper/stepper.component';
+import { InputComponent } from './components/input/input.component';
+import { SelectComponent } from './components/select/select.component';
+import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
+import { AutocompletefilterComponent } from './components/autocompletefilter/autocompletefilter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +44,14 @@ import { ExpansionpanelComponent } from './components/expansionpanel/expansionpa
     MenuComponent,
     ListComponent,
     GridlistComponent,
-    ExpansionpanelComponent
+    ExpansionpanelComponent,
+    CardsComponent,
+    TabsComponent,
+    StepperComponent,
+    InputComponent,
+    SelectComponent,
+    AutocompleteComponent,
+    AutocompletefilterComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +59,8 @@ import { ExpansionpanelComponent } from './components/expansionpanel/expansionpa
     BrowserAnimationsModule,
     MaterialModule,
     MatIconModule,
-    FormsModule],
+    FormsModule,
+    ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })

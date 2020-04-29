@@ -22,7 +22,14 @@ export class AppComponent {
   showMenu = false;
   showList = false;
   showGridList = false;
-  showExpansionPanel = true;
+  showExpansionPanel = false;
+  showCards = false;
+  showTabs = false;
+  showStepper = false;
+  showInput = false;
+  showSelect = false;
+  showAutocomplete = false;
+  showAutocompleteFilter = true;
 
 }
 
