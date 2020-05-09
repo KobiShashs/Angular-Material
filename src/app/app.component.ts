@@ -29,7 +29,15 @@ export class AppComponent {
   showInput = false;
   showSelect = false;
   showAutocomplete = false;
-  showAutocompleteFilter = true;
+  showAutocompleteFilter = false;
+  showCheckBox = false;
+  showRadio = false;
+  showDate = false;
+  showTooltip = false;
+  showSanckbar = false;
+  showDialog = false;
+  showDataTable = false;
+  showScrolling = true;
 
 }
 

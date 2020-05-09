@@ -83,14 +83,48 @@
    <app-select *ngIf="showSelect"></app-select>
 </div>
 <div>
-   <button *ngIf="showAutocomplete" mat-raised-button color="primary" (click)="showAutocomplete = !showAutocomplete"> Material Autocomplete</button> 
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showAutocomplete = !showAutocomplete"> Material Autocomplete</button> 
    <app-autocomplete *ngIf="showAutocomplete"></app-autocomplete>
 </div>
 <div>
-   <button *ngIf="true" mat-raised-button color="primary" (click)="showAutocompleteFilter = !showAutocompleteFilter"> Material Autocomplete Filter</button> 
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showAutocompleteFilter = !showAutocompleteFilter"> Material Autocomplete Filter</button> 
    <app-autocompletefilter *ngIf="showAutocompleteFilter"></app-autocompletefilter>
 </div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showCheckBox = !showCheckBox"> Material Checkbox</button> 
+   <app-checkbox *ngIf="showCheckBox"></app-checkbox>
+</div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showRadio = !showRadio"> Material Radio</button> 
+   <app-radio *ngIf="showRadio"></app-radio>
+</div>
 
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showDate = !showDate"> Material Date Picker</button> 
+   <app-datepicker *ngIf="showDate"></app-datepicker>
+</div>
 
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showTooltip = !showTooltip"> Material Tooltip</button> 
+   <app-tooltip *ngIf="showTooltip"></app-tooltip>
+</div>
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showSanckbar = !showSanckbar"> Material Sanckbar</button> 
+   <app-snackbar *ngIf="showSanckbar"></app-snackbar>
+</div>
 
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showDialog = !showDialog"> Material Dialog</button> 
+   <app-dialogs *ngIf="showDialog"></app-dialogs>
+</div>
+
+<div>
+   <button *ngIf="showElements" mat-raised-button color="primary" (click)="showDataTable = !showDataTable"> Material Data Table</button> 
+   <app-datatable *ngIf="showDataTable"></app-datatable>
+</div>
+
+<div>
+   <button *ngIf="true" mat-raised-button color="primary" (click)="showScrolling = !showScrolling"> Material Scrolling</button> 
+   <app-scrolling *ngIf="showScrolling"></app-scrolling>
+</div>
 

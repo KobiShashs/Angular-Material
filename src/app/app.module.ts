@@ -28,7 +28,16 @@ import { InputComponent } from './components/input/input.component';
 import { SelectComponent } from './components/select/select.component';
 import { AutocompleteComponent } from './components/autocomplete/autocomplete.component';
 import { AutocompletefilterComponent } from './components/autocompletefilter/autocompletefilter.component';
-
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
+import { RadioComponent } from './components/radio/radio.component';
+import { DatepickerComponent } from './components/datepicker/datepicker.component';
+import { TooltipComponent } from './components/tooltip/tooltip.component';
+import { SnackbarComponent, CustomSnackBarComponent } from './components/snackbar/snackbar.component';
+import { DialogsComponent } from './components/dialogs/dialogs.component';
+import { DialogExampleComponent } from './components/dialog-example/dialog-example.component';
+import { DatatableComponent } from './components/datatable/datatable.component';
+import { ScrollingComponent } from './components/scrolling/scrolling.component';
+import {ScrollingModule } from '@angular/cdk/scrolling';
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,8 +60,19 @@ import { AutocompletefilterComponent } from './components/autocompletefilter/aut
     InputComponent,
     SelectComponent,
     AutocompleteComponent,
-    AutocompletefilterComponent
+    AutocompletefilterComponent,
+    CheckboxComponent,
+    RadioComponent,
+    DatepickerComponent,
+    TooltipComponent,
+    SnackbarComponent,
+    CustomSnackBarComponent,
+    DialogsComponent,
+    DialogExampleComponent,
+    DatatableComponent,
+    ScrollingComponent
   ],
+  entryComponents: [CustomSnackBarComponent, DialogExampleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -60,7 +80,8 @@ import { AutocompletefilterComponent } from './components/autocompletefilter/aut
     MaterialModule,
     MatIconModule,
     FormsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    ScrollingModule],
   providers: [],
   bootstrap: [AppComponent]
 })
