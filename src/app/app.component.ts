@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'landing';
 
-  showElements = false;
+  showElements = true;
 
   showButtons = false;
   showTypography = false;
@@ -37,7 +37,7 @@ export class AppComponent {
   showSanckbar = false;
   showDialog = false;
   showDataTable = false;
-  showScrolling = true;
+  showScrolling = false;
 
 }
 
